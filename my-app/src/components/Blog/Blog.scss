@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.blog {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  div {
+    width: 700px;
+    background: #444;
+    position: relative;
+    left: -50%;
+  }
+  .blog_column1 {
+    z-index: 1;
+    .blog_line {
+      position: absolute;
+      top: 10%;
+      height: 40%;
+      right: 40%;
+      width: 2px;
+      left: 465px;
+      background-color: white;
+      transform: rotate(-41.2deg);
+    }
+  }
+  .blog_column2 {
+    background: white;
+    clip-path: polygon(65% 0%, 100% 50%, 55% 100%, 0% 100%, 35% 50%, 0% 0%);
+    width: 700px;
+    left: -100%;
+    z-index: 2;
+    .blog_title {
+      background: white;
+      top: 15%;
+      left: 30%;
+      width: 30vw;
+      height: 14vh;
+      span {
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1vw;
+        p {
+          padding-left: 34px;
+        }
+      }
+    }
+    .blog_text1 {
+      background: white;
+      top: 12%;
+      left: 45%;
+      width: 200px;
+      height: 100px;
+      line-height: 0.7em;
+      .blog_line1 {
+        position: absolute;
+        top: -15%;
+        height: 25%;
+        right: 40%;
+        width: 2px;
+        left: -5%;
+        background-color: black;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+    .blog_text2 {
+      background: white;
+      top: 8%;
+      left: 55%;
+      width: 200px;
+      height: 100px;
+      line-height: 0.7em;
+      .blog_line2 {
+        position: absolute;
+        top: -15%;
+        height: 25%;
+        right: 40%;
+        width: 2px;
+        left: -5%;
+        background-color: black;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+    .blog_text3 {
+      background: white;
+      top: 4%;
+      left: 45%;
+      width: 200px;
+      height: 100px;
+      line-height: 0.7em;
+      .blog_line3 {
+        position: absolute;
+        top: -15%;
+        height: 25%;
+        right: 40%;
+        width: 2px;
+        left: -5%;
+        background-color: black;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+    .blog_text4 {
+      background: white;
+      top: 1%;
+      left: 32%;
+      width: 200px;
+      height: 100px;
+      line-height: 0.7em;
+      .blog_line4 {
+        position: absolute;
+        top: -15%;
+        height: 25%;
+        right: 40%;
+        width: 2px;
+        left: -5%;
+        background-color: black;
+      }
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+  .blog_column3 {
+    width: 80vw;
+    // min-width: 1000px;
+    left: -100%;
+    background: url("../../image/1639363902-1006-www.lookw.ru.jpg") 100% 50% /
+      cover;
+    transform: all 0.5s ease-in-out;
+    z-index: 0;
+  }
+  @media (max-width: 1120px) {
+    .blog_column3 {
+      left: -140%;
+    }
+  }
+}
