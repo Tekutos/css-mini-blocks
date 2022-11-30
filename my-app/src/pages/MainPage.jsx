@@ -16,7 +16,7 @@ function MainPage() {
   }
 
   function handlerClick3() {
-    navigate("/slidetemplate");
+    navigate("/cardlist");
   }
 
   function handlerClick4() {
