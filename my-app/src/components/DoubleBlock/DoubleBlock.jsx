@@ -7,7 +7,9 @@ function DoubleBlock() {
       <div className={`${base}_left`}>
         <div>
           <div className={`${base}_square`}>
-            <div className={`${base}_square_bg`}></div>
+            <div className={`${base}_bg_wrap`}>
+              <div className={`${base}_square_bg1`}></div>
+            </div>
           </div>
           <div className={`${base}_text`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, qui.
@@ -17,8 +19,11 @@ function DoubleBlock() {
           <div className={`${base}_text`}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, qui.
           </div>
-          <div className={`${base}_square`}></div>
-          <div className={`${base}_square_bg`}></div>
+          <div className={`${base}_square`}>
+            <div className={`${base}_bg_wrap`}>
+              <div className={`${base}_square_bg2`}></div>
+            </div>
+          </div>
         </div>
       </div>
       <div className={`${base}_right`}>

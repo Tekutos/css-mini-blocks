@@ -8,7 +8,6 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   .doubleblock_right {
-    outline: 1px solid red;
     text-align: right;
     padding: 100px 60px;
     text-transform: uppercase;
@@ -45,17 +44,35 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
+    .doubleblock_text {
+      max-width: 200px;
+    }
+    .doubleblock_text:first-child {
+      margin-left: 6vw;
+      border-left: 3px solid #777;
+      padding-left: 20px;
+    }
+    .doubleblock_text:last-child {
+      margin-left: 14vw;
+      border-right: 3px solid #777;
+      padding-right: 20px;
+    }
+
     .doubleblock_text + .doubleblock_square {
-      margin-top: 10vw;
+      top: 0;
       margin-bottom: 0;
     }
   }
   .doubleblock_left > div:first-child {
     justify-self: end;
     text-align: right;
+    .doubleblock_text {
+      border-right: 3px solid #777;
+      padding-right: 20px;
+    }
   }
   .doubleblock_left > div {
-    outline: 1px solid red;
     .doubleblock_square {
       --size: 23vw;
       position: relative;
@@ -64,7 +81,51 @@
       height: var(--size);
       background: #333;
       transform: rotate(45deg);
-      margin-bottom: 10vw;
+      margin-bottom: 7vw;
+      margin-top: 15vw;
+      top: -6vw;
+      box-shadow: 0 4vw 8vw rgba($color: #000000, $alpha: 0.7);
+      .doubleblock_bg_wrap {
+        height: 100%;
+        overflow: hidden;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        .doubleblock_square_bg1 {
+          height: 150%;
+          width: 150%;
+          background-position: center;
+          background-image: url("../../image/fa7247b8a42849281369118ab7fcc0cc.jpg");
+          transform: rotate(-45deg);
+          vertical-align: top;
+        }
+        .doubleblock_square_bg2 {
+          height: 150%;
+          width: 150%;
+          background-position: center;
+          background: url("../../image/priroda-peyzazh-zelen-solnce.jpg");
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    .doubleblock_square::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      width: 3px;
+      background-color: #444;
+      right: -10%;
+    }
+    .doubleblock_square:first-child::before {
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      width: 3px;
+      background-color: #444;
+      left: initial;
+      left: -10%;
     }
   }
 }

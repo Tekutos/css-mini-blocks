@@ -20,7 +20,7 @@ function MainPage() {
   }
 
   function handlerClick4() {
-    navigate("/slidetemplate");
+    navigate("/doubleblock");
   }
 
   function handlerClick5() {
