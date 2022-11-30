@@ -8,16 +8,24 @@
     display: flex;
     height: 100vh;
     background: #444;
+    padding: 10px;
+    grid-gap: 20px;
     .main_slidetemplateBox1 {
-      height: 1000px;
-      width: 250px;
+      height: 97vh;
+      width: 350px;
       background-image: url("../image/Path-to-the-snow-capped-mountains_1920x1080.jpg");
       border-radius: 5px;
     }
     .main_slidetemplateBox2 {
-      height: 1000px;
-      width: 250px;
+      height: 97vh;
+      width: 350px;
       background-image: url("../image/1639363902-1006-www.lookw.ru.jpg");
+      border-radius: 5px;
+    }
+    .main_slidetemplateBox3 {
+      height: 97vh;
+      width: 350px;
+      background-image: url("../image/624e27fde335d49e2dd3c6b75c6027a3.jpeg");
       border-radius: 5px;
     }
   }

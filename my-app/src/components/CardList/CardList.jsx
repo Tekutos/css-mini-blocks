@@ -18,6 +18,7 @@ function CardList() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
             ducimus deserunt.
           </div>
+          <div className={`${base}_line`}></div>
         </div>
       </div>
       <div className={`${base}_right`}>
