@@ -24,7 +24,7 @@ function MainPage() {
   }
 
   function handlerClick5() {
-    navigate("/slidetemplate");
+    navigate("/slidetemplate2");
   }
 
   return (

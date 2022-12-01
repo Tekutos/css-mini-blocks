@@ -5,34 +5,40 @@
 
 .container {
   .main_Box1 {
-    display: flex;
+    display: grid;
     height: 100vh;
-    background: #444;
-    padding: 10px;
+    background: white;
+    // padding: 10px;
     grid-gap: 20px;
-    .main_slidetemplateBox1 {
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+
+    .main_slidetemplateBox1,
+    .main_slidetemplateBox2,
+    .main_slidetemplateBox3,
+    .main_slidetemplateBox4,
+    .main_slidetemplateBox5 {
       height: 97vh;
       width: 350px;
-      background-image: url("../image/Path-to-the-snow-capped-mountains_1920x1080.jpg");
       border-radius: 5px;
+      box-shadow: 0 1vw 2vw rgba($color: #000000, $alpha: 0.7);
+    }
+
+    .main_slidetemplateBox1 {
+      background-image: url("../image/Path-to-the-snow-capped-mountains_1920x1080.jpg");
     }
     .main_slidetemplateBox2 {
-      height: 97vh;
-      width: 350px;
       background-image: url("../image/1639363902-1006-www.lookw.ru.jpg");
-      border-radius: 5px;
     }
     .main_slidetemplateBox3 {
-      height: 97vh;
-      width: 350px;
       background-image: url("../image/624e27fde335d49e2dd3c6b75c6027a3.jpeg");
-      border-radius: 5px;
     }
     .main_slidetemplateBox4 {
-      height: 97vh;
-      width: 350px;
       background-image: url("../image/fa7247b8a42849281369118ab7fcc0cc.jpg");
-      border-radius: 5px;
+    }
+    .main_slidetemplateBox5 {
+      background-image: url("../image/72575-sahara-indiya-poyushhij_pesok-eolovogo_relefa-pustynya-1920x1080.jpg");
     }
   }
 }
